@@ -7,7 +7,8 @@ import Posts from './Components/Posts/Posts'
 import Form from './Components/Form/Form'
 import memories from './images/memories.png'
 import useStyles from './styles'
-
+import WebcamPose from './Components/WebCam/SearchBar'
+import Webcam from "react-webcam";
 
 
 const App = () => {
@@ -30,7 +31,10 @@ const App = () => {
                     <Grid container justify="space-between" alignItems="stretch" spacing={3}>
                         <Grid item xs={12} sm={7}>
                             <Posts />
+                            <WebcamPose />
                         </Grid>
+                        {/* <Grid item xs={12} sm={7}>
+                        </Grid> */}
 
                         <Grid item xs={12} sm={4}>
                             <Form />
